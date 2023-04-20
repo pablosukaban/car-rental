@@ -15,8 +15,8 @@ const Header = () => {
     const [isMenuClicked, seIsMenuClicked] = useState(false);
 
     return (
-        <header className="container">
-            <div className="absolute left-0 right-0 top-0 mx-auto flex w-full max-w-7xl items-center justify-between px-7 py-7 font-semibold lg:px-5">
+        <header className="container ">
+            <div className="absolute left-0 right-0 top-0 z-50 mx-auto flex w-full max-w-7xl items-center justify-between px-7 py-7 font-semibold lg:px-5">
                 <div className="w-[8rem]">
                     <img src={Logo} alt="Logo" />
                 </div>
