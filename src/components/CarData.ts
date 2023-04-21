@@ -5,6 +5,10 @@ import Bmw320 from '../images/cars-big/bmw320.jpg';
 import Benz from '../images/cars-big/benz.jpg';
 import Passat from '../images/cars-big/passatcc.jpg';
 
+import Image1 from '../images/plan/icon1.png';
+import Image2 from '../images/plan/icon2.png';
+import Image3 from '../images/plan/icon3.png';
+
 export type CarDataType = {
     name: string;
     price: string;
@@ -90,5 +94,29 @@ export const CAR_DATA: CarDataType[] = [
         air: 'Yes',
         transmission: 'Automatic',
         fuel: 'Gasoline',
+    },
+];
+
+export type PlanType = {
+    icon: string;
+    title: string;
+    text: string;
+};
+
+export const plans: PlanType[] = [
+    {
+        icon: Image1,
+        title: 'Select Car',
+        text: 'We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs',
+    },
+    {
+        icon: Image2,
+        title: 'Contact Operator',
+        text: 'Our knowledgeable and friendly operators are always ready to help with any questions or concerns',
+    },
+    {
+        icon: Image3,
+        title: "Let's Drive",
+        text: "Whether you're hitting the open road, we've got you covered with our wide range of cars",
     },
 ];
