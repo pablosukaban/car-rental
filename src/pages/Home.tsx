@@ -6,6 +6,7 @@ import Models from '../components/Models';
 import SupportInfo from '../components/SupportInfo';
 import ChooseUs from '../components/ChooseUs';
 import Testimonials from '../components/Testimonials';
+import FAQ from '../components/FAQ';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <SupportInfo />
             <ChooseUs />
             <Testimonials />
+            <FAQ />
         </div>
     );
 };
