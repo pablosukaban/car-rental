@@ -5,9 +5,13 @@ import Bmw320 from '../images/cars-big/bmw320.jpg';
 import Benz from '../images/cars-big/benz.jpg';
 import Passat from '../images/cars-big/passatcc.jpg';
 
-import Image1 from '../images/plan/icon1.png';
-import Image2 from '../images/plan/icon2.png';
-import Image3 from '../images/plan/icon3.png';
+import PlanImage1 from '../images/plan/icon1.png';
+import PlanImage2 from '../images/plan/icon2.png';
+import PlanImage3 from '../images/plan/icon3.png';
+
+import BenefitImage1 from '../images/chooseUs/icon1.png';
+import BenefitImage2 from '../images/chooseUs/icon2.png';
+import BenefitImage3 from '../images/chooseUs/icon3.png';
 
 export type CarDataType = {
     name: string;
@@ -97,26 +101,44 @@ export const CAR_DATA: CarDataType[] = [
     },
 ];
 
-export type PlanType = {
+export type InfoItemType = {
     icon: string;
     title: string;
     text: string;
 };
 
-export const plans: PlanType[] = [
+export const plans: InfoItemType[] = [
     {
-        icon: Image1,
+        icon: PlanImage1,
         title: 'Select Car',
         text: 'We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs',
     },
     {
-        icon: Image2,
+        icon: PlanImage2,
         title: 'Contact Operator',
         text: 'Our knowledgeable and friendly operators are always ready to help with any questions or concerns',
     },
     {
-        icon: Image3,
+        icon: PlanImage3,
         title: "Let's Drive",
         text: "Whether you're hitting the open road, we've got you covered with our wide range of cars",
+    },
+];
+
+export const benefits: InfoItemType[] = [
+    {
+        icon: BenefitImage1,
+        title: 'Cross Country Drive',
+        text: 'Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.',
+    },
+    {
+        icon: BenefitImage2,
+        title: 'All Inclusive Pricing',
+        text: 'Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.',
+    },
+    {
+        icon: BenefitImage3,
+        title: 'No Hidden Charges',
+        text: 'Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest pricing.',
     },
 ];

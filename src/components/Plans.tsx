@@ -1,17 +1,6 @@
 import React from 'react';
-import { plans, PlanType } from './CarData';
-
-const SinglePlan = ({ givenPlan }: { givenPlan: PlanType }) => {
-    return (
-        <li>
-            <div className="flex flex-col items-center justify-center gap-4">
-                <img src={givenPlan.icon} alt="plan icon" />
-                <h3 className="text-2xl font-semibold">{givenPlan.title}</h3>
-                <p className="px-4 text-gray-500">{givenPlan.text}</p>
-            </div>
-        </li>
-    );
-};
+import { plans } from './CarData';
+import { SinglePlan } from './SingleItem';
 
 const Plans = () => {
     return (

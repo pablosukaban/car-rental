@@ -4,6 +4,7 @@ import BookCar from '../components/BookCar';
 import Plans from '../components/Plans';
 import Models from '../components/Models';
 import SupportInfo from '../components/SupportInfo';
+import ChooseUs from '../components/ChooseUs';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Plans />
             <Models />
             <SupportInfo />
+            <ChooseUs />
         </div>
     );
 };
