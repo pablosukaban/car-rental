@@ -5,6 +5,7 @@ import Plans from '../components/Plans';
 import Models from '../components/Models';
 import SupportInfo from '../components/SupportInfo';
 import ChooseUs from '../components/ChooseUs';
+import Testimonials from '../components/Testimonials';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Models />
             <SupportInfo />
             <ChooseUs />
+            <Testimonials />
         </div>
     );
 };

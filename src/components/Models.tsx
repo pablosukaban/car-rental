@@ -75,7 +75,7 @@ const Models = () => {
                         </button>
                     ))}
                 </div>
-                <div className="flex justify-center md:justify-start">
+                <div className="flex justify-center md:justify-start lg:justify-center">
                     <img
                         className="w-[500px] object-contain"
                         src={currentCar.img}

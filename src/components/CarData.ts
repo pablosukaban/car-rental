@@ -13,6 +13,9 @@ import BenefitImage1 from '../images/chooseUs/icon1.png';
 import BenefitImage2 from '../images/chooseUs/icon2.png';
 import BenefitImage3 from '../images/chooseUs/icon3.png';
 
+import TestimonialsImage1 from '../images/testimonials/pfp1.jpg';
+import TestimonialsImage2 from '../images/testimonials/pfp2.jpg';
+
 export type CarDataType = {
     name: string;
     price: string;
@@ -24,6 +27,19 @@ export type CarDataType = {
     air: string;
     transmission: string;
     fuel: string;
+};
+
+export type InfoItemType = {
+    icon: string;
+    title: string;
+    text: string;
+};
+
+export type TestimonialType = {
+    name: string;
+    city: string;
+    image: string;
+    text: string;
 };
 
 export const CAR_DATA: CarDataType[] = [
@@ -101,12 +117,6 @@ export const CAR_DATA: CarDataType[] = [
     },
 ];
 
-export type InfoItemType = {
-    icon: string;
-    title: string;
-    text: string;
-};
-
 export const plans: InfoItemType[] = [
     {
         icon: PlanImage1,
@@ -140,5 +150,20 @@ export const benefits: InfoItemType[] = [
         icon: BenefitImage3,
         title: 'No Hidden Charges',
         text: 'Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest pricing.',
+    },
+];
+
+export const testimonials: TestimonialType[] = [
+    {
+        name: 'Parry Hotter',
+        city: 'Belgrade',
+        image: TestimonialsImage1,
+        text: '"We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable. "',
+    },
+    {
+        name: 'Ron Rizzly',
+        city: 'Novi Sad',
+        image: TestimonialsImage2,
+        text: '"The car was in great condition and made our trip even better. Highly recommend for this car rental website!"',
     },
 ];
