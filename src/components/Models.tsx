@@ -59,7 +59,7 @@ const Models = () => {
                     your next adventure or business trip
                 </p>
             </div>
-            <div className="grid w-full grid-cols-1 gap-12 px-6 md:grid-cols-2 lg:grid-cols-3 ">
+            <div className="grid w-full grid-cols-1 gap-12 px-6 md:grid-cols-2 lg:grid-cols-[1fr_2fr_1fr]   ">
                 <div className="flex w-full flex-col items-center gap-2 md:col-span-2 lg:col-span-1">
                     {CAR_DATA.map((item, index) => (
                         <button
