@@ -48,7 +48,7 @@ const Models = () => {
     const [currentCar, setCurrentCar] = useState(CAR_DATA[0]);
 
     return (
-        <section className="container z-30 mx-auto mt-24 max-w-7xl text-center">
+        <section className="container z-30 mx-auto my-24 max-w-7xl text-center">
             <div className="mb-12 space-y-4">
                 <h2 className="text-3xl font-semibold">Vehicle Models</h2>
                 <h1 className="text-4xl font-bold lg:text-5xl">
