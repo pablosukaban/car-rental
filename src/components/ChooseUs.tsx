@@ -4,7 +4,11 @@ import { ChevronRightIcon } from '@heroicons/react/24/solid';
 import { benefits } from './CarData';
 import { SingleInfoItem } from './SingleItem';
 
-const ChooseUs = () => {
+type ChooseUsProps = {
+    findDetailsClick: (e: React.MouseEvent) => void;
+};
+
+const ChooseUs = ({ findDetailsClick }: ChooseUsProps) => {
     return (
         <section className="container z-30 mx-auto mb-24 max-w-7xl px-4 ">
             <div className="flex flex-col items-center justify-center px-6">
@@ -31,7 +35,10 @@ const ChooseUs = () => {
                             максимальный опыт аренды, поэтому не упустите свой
                             шанс сэкономить.
                         </p>
-                        <button className="mt-4 flex items-center justify-center gap-2 rounded bg-primary px-5 py-3 text-lg font-semibold text-white transition hover:bg-primary/80 lg:self-start">
+                        <button
+                            onClick={findDetailsClick}
+                            className="mt-4 flex items-center justify-center gap-2 rounded bg-primary px-5 py-3 text-lg font-semibold text-white transition hover:bg-primary/80 lg:self-start"
+                        >
                             Узнайте детали{' '}
                             <ChevronRightIcon className="h-4 w-4 text-white" />
                         </button>

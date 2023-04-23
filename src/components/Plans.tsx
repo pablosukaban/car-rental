@@ -14,7 +14,7 @@ const Plans = () => {
                         Быстрый и простой прокат автомобилей
                     </h1>
                 </div>
-                <ul className="grid grid-cols-1 items-center justify-center gap-x-4 gap-y-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
+                <ul className="grid grid-cols-1 items-start justify-center gap-x-4 gap-y-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
                     {plans.map((item, index) => (
                         <SinglePlan key={index} givenPlan={item} />
                     ))}

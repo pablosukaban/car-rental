@@ -40,7 +40,11 @@ const CarBox = ({ givenCar }: { givenCar: CarDataType }) => {
     );
 };
 
-const Models = () => {
+type ModelsProps = {
+    reserveNowClick: (e: React.MouseEvent) => void;
+};
+
+const Models = ({ reserveNowClick }: ModelsProps) => {
     const [currentCar, setCurrentCar] = useState(CAR_DATA[0]);
 
     return (
@@ -88,8 +92,11 @@ const Models = () => {
                     <div>
                         <CarBox givenCar={currentCar} />
                     </div>
-                    <button className="mt-4 w-full bg-primary py-3 font-semibold text-white transition hover:bg-primary/80">
-                        {'Reserve Now'.toUpperCase()}
+                    <button
+                        onClick={reserveNowClick}
+                        className="mt-4 w-full bg-primary py-3 font-semibold text-white transition hover:bg-primary/80"
+                    >
+                        {'Подтвердить'.toUpperCase()}
                     </button>
                 </div>
             </div>

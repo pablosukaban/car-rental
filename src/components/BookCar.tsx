@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { CAR_DATA } from './CarData';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import {
@@ -24,14 +24,20 @@ type Inputs = {
     dropDate: string;
 };
 
-const BookCar = () => {
+// type BookCarProps = {};
+
+const BookCar = forwardRef<HTMLSelectElement>((props, ref) => {
     const { register, handleSubmit } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
 
     return (
-        <section className="container z-30 mx-auto max-w-7xl  bg-white">
+        <section
+            id="bookCar"
+            className="container z-30 mx-auto max-w-7xl  bg-white"
+            ref={ref}
+        >
             <div className=" z-30 mx-4 border border-gray-300/40 bg-white  px-4 py-6 shadow-xl">
-                <h2 className="mb-4 text-3xl font-bold">Book a car</h2>
+                <h2 className="mb-4 text-3xl font-bold">Заказать автомобиль</h2>
                 <form
                     className="z-30 grid grid-cols-1  gap-4 bg-white md:grid-cols-2 lg:grid-cols-3"
                     onSubmit={handleSubmit(onSubmit)}
@@ -139,6 +145,8 @@ const BookCar = () => {
             </div>
         </section>
     );
-};
+});
+
+BookCar.displayName = 'BookCar';
 
 export default BookCar;
