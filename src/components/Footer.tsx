@@ -7,13 +7,11 @@ const Footer = () => {
             <div className="px-6">
                 <div className="grid gap-y-20 text-center sm:grid-cols-2 sm:gap-12 sm:text-left lg:grid-cols-4 lg:gap-16">
                     <div className="space-y-4">
-                        <h3 className="text-2xl font-semibold">
-                            <span className="font-bold">CAR</span> Rental
-                        </h3>
+                        <h3 className="text-2xl font-bold uppercase">Прокат</h3>
                         <p className="text-lg text-gray-500">
-                            We offers a big range of vehicles for all your
-                            driving needs. We have the perfect car to meet your
-                            needs.
+                            Мы предлагаем большой выбор автомобилей для всех
+                            ваших потребностей. У нас есть идеальный автомобиль
+                            для удовлетворения ваших потребности.
                         </p>
                         <div className="flex flex-col items-center  gap-2 sm:items-start">
                             <a
@@ -40,60 +38,60 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                Design by XpeedStudio
+                                Дизайн XpeedStudio
                             </a>
                         </div>
                     </div>
                     <div className="flex flex-col items-center  gap-3 sm:items-start">
                         <h3 className="text-2xl font-bold uppercase">
-                            Company
+                            Компания
                         </h3>
                         <a
                             href=""
                             className="font-medium transition hover:text-primary"
                         >
-                            New York
+                            Нью-Йорк
                         </a>
                         <a
                             href=""
                             className="font-medium transition hover:text-primary"
                         >
-                            Careers
+                            Карьера
                         </a>
                         <a
                             href=""
                             className="font-medium transition hover:text-primary"
                         >
-                            Mobile
+                            Мобильный
                         </a>
                         <a
                             href=""
                             className="font-medium transition hover:text-primary"
                         >
-                            Blog
+                            Блог
                         </a>
                         <a
                             href=""
                             className="font-medium transition hover:text-primary"
                         >
-                            How we work
+                            Как мы работаем
                         </a>
                     </div>
                     <div className="flex flex-col items-center  gap-3 sm:items-start">
                         <h3 className="text-2xl font-bold uppercase">
-                            Working Hours
+                            Рабочие часы
                         </h3>
-                        <p>Mon - Fri: 9:00AM - 9:00PM</p>
-                        <p>Sat: 9:00AM - 19:00PM</p>
-                        <p>Sun: Closed</p>
+                        <p>Пн - Пт: 9:00 - 21</p>
+                        <p>Сб: 9:00 - 19:00</p>
+                        <p>Вс: Закрыто</p>
                     </div>
-                    <div className="flex flex-col items-center  gap-3 sm:items-start">
+                    <div className="flex flex-col items-center gap-4 sm:items-start">
                         <h3 className="text-2xl font-bold uppercase">
-                            Subscription
+                            Подписка
                         </h3>
                         <p>
-                            Subscribe your Email address for latest news &
-                            updates.
+                            Подпишитесь, указав свой адрес электронной почты,
+                            чтобы быть в курсе последних новостей и обновлений.
                         </p>
                         <div className="flex w-full flex-col gap-2">
                             <input

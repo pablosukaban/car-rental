@@ -49,16 +49,17 @@ export type FaqType = {
 
 export const FaqList: FaqType[] = [
     {
-        question: '1. What is special about comparing rental car deals?',
-        answer: 'Comparing rental car deals is important as it helps find the best deal that fits your budget and requirements, ensuring you get the most value for your money. By comparing various options, you can find deals that offer lower prices, additional services, or better car models. You can find car rental deals by researching online and comparing prices from different rental companies.',
+        question:
+            '1. Что особенного в сравнении предложений по аренде автомобилей?',
+        answer: 'Сравнение предложений по аренде автомобилей очень важно, поскольку оно помогает найти наилучшее предложение, соответствующее вашему бюджету и требованиям, гарантируя, что вы получите максимальную отдачу за свои деньги. Сравнивая различные варианты, вы можете найти предложения, предлагающие более низкие цены, дополнительные услуги или лучшие модели автомобилей. Вы можете найти предложения по аренде автомобилей, проведя исследование в Интернете и сравнив цены от различных прокатных компаний.',
     },
     {
-        question: '2. How do I find the car rental deals?',
-        answer: 'You can find car rental deals by researching online and comparing prices from different rental companies. Websites such as Expedia, Kayak, and Travelocity allow you to compare prices and view available rental options. It is also recommended to sign up for email newsletters and follow rental car companies on social media to be informed of any special deals or promotions.',
+        question: '2. Как найти предложения по аренде автомобилей?',
+        answer: 'Вы можете найти предложения по аренде автомобилей, изучив информацию в Интернете и сравнив цены от различных компаний по прокату. Такие сайты, как Expedia, Kayak и Travelocity, позволяют сравнивать цены и просматривать доступные варианты аренды. Также рекомендуется подписаться на рассылку новостей по электронной почте и следить за компаниями по прокату автомобилей в социальных сетях, чтобы быть в курсе любых специальных предложений или акций.',
     },
     {
-        question: '3. How do I find such low rental car prices?',
-        answer: 'Book in advance: Booking your rental car ahead of time can often result in lower prices. Compare prices from multiple companies: Use websites like Kayak, Expedia, or Travelocity to compare prices from multiple rental car companies. Look for discount codes and coupons: Search for discount codes and coupons that you can use to lower the rental price. Renting from an off-airport location can sometimes result in lower prices.',
+        question: '3. Как я найду такие низкие цены на аренду автомобиля?',
+        answer: 'Забронируйте заранее: Заблаговременное бронирование автомобиля напрокат часто может привести к более низким ценам. Сравните цены от нескольких компаний: используйте такие веб-сайты, как Kayak, Expedia или Travelocity, чтобы сравнить цены от нескольких компаний по аренде автомобилей. Ищите коды скидок и купоны: ищите коды скидок и купоны, которые можно использовать для снижения стоимости аренды. Аренда за пределами аэропорта иногда может привести к более низким ценам.',
     },
 ];
 
@@ -71,9 +72,9 @@ export const CAR_DATA: CarDataType[] = [
         mark: 'Volkswagen',
         year: '2008',
         doors: '4/5',
-        air: 'Yes',
-        transmission: 'Manual',
-        fuel: 'Diesel',
+        air: 'Да',
+        transmission: 'Механика',
+        fuel: 'Дизель',
     },
     {
         name: 'Audi A1 S-Line',
@@ -83,9 +84,9 @@ export const CAR_DATA: CarDataType[] = [
         mark: 'A1',
         year: '2012',
         doors: '4/5',
-        air: 'Yes',
-        transmission: 'Manual',
-        fuel: 'Gasoline',
+        air: 'Да',
+        transmission: 'Механика',
+        fuel: 'Бензин',
     },
     {
         name: 'Toyota Camry',
@@ -95,8 +96,8 @@ export const CAR_DATA: CarDataType[] = [
         mark: 'Toyota',
         year: '2006',
         doors: '4/5',
-        air: 'Yes',
-        transmission: 'Automatic',
+        air: 'Да',
+        transmission: 'Автомат',
         fuel: 'Hybrid',
     },
     {
@@ -107,9 +108,9 @@ export const CAR_DATA: CarDataType[] = [
         mark: 'BMW',
         year: '2012',
         doors: '4/5',
-        air: 'Yes',
-        transmission: 'Manual',
-        fuel: 'Diesel',
+        air: 'Да',
+        transmission: 'Механика',
+        fuel: 'Дизель',
     },
     {
         name: 'Mercedes-Benz GLK',
@@ -119,9 +120,9 @@ export const CAR_DATA: CarDataType[] = [
         mark: 'Mercedes',
         year: '2006',
         doors: '4/5',
-        air: 'Yes',
-        transmission: 'Manual',
-        fuel: 'Diesel',
+        air: 'Да',
+        transmission: 'Механика',
+        fuel: 'Дизель',
     },
     {
         name: 'VW Passat CC',
@@ -131,59 +132,59 @@ export const CAR_DATA: CarDataType[] = [
         mark: 'Volkswagen',
         year: '2008',
         doors: '4/5',
-        air: 'Yes',
-        transmission: 'Automatic',
-        fuel: 'Gasoline',
+        air: 'Да',
+        transmission: 'Автомат',
+        fuel: 'Бензин',
     },
 ];
 
 export const plans: InfoItemType[] = [
     {
         icon: PlanImage1,
-        title: 'Select Car',
-        text: 'We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs',
+        title: 'Выберите автомобиль',
+        text: 'Мы предлагаем большой выбор автомобилей для всех ваших потребностей. У нас есть идеальный автомобиль для удовлетворения ваших потребностей',
     },
     {
         icon: PlanImage2,
-        title: 'Contact Operator',
-        text: 'Our knowledgeable and friendly operators are always ready to help with any questions or concerns',
+        title: 'Свяжитесь с оператором',
+        text: 'Наши знающие и доброжелательные операторы всегда готовы помочь в решении любых вопросов и проблем',
     },
     {
         icon: PlanImage3,
-        title: "Let's Drive",
-        text: "Whether you're hitting the open road, we've got you covered with our wide range of cars",
+        title: 'В путь',
+        text: 'Если вы собираетесь на открытую дорогу, мы позаботимся о вас, предоставив широкий выбор автомобилей.',
     },
 ];
 
 export const benefits: InfoItemType[] = [
     {
         icon: BenefitImage1,
-        title: 'Cross Country Drive',
-        text: 'Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.',
+        title: 'Поездка через страну',
+        text: 'Поднимите свой опыт вождения на новый уровень с нашими первоклассными автомобилями для ваших приключений по пересеченной местности.',
     },
     {
         icon: BenefitImage2,
-        title: 'All Inclusive Pricing',
-        text: 'Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.',
+        title: 'Ценообразование по системе "Все включено',
+        text: 'Получите все необходимое по одной удобной и прозрачной цене благодаря нашей политике ценообразования "все включено".',
     },
     {
         icon: BenefitImage3,
-        title: 'No Hidden Charges',
-        text: 'Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest pricing.',
+        title: 'Никаких скрытых платежей',
+        text: 'Наслаждайтесь душевным спокойствием благодаря нашей политике отсутствия скрытых платежей. Мы верим в прозрачное и честное ценообразование.',
     },
 ];
 
 export const testimonials: TestimonialType[] = [
     {
-        name: 'Parry Hotter',
-        city: 'Belgrade',
+        name: 'Парри Хоттер',
+        city: 'Екатеринбург',
         image: TestimonialsImage1,
-        text: '"We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable. "',
+        text: '"Мы арендовали автомобиль с этого сайта и получили потрясающий опыт! Бронирование было простым, а цены на аренду были очень доступными."',
     },
     {
-        name: 'Ron Rizzly',
-        city: 'Novi Sad',
+        name: 'Рон Риззли',
+        city: 'Тюмень',
         image: TestimonialsImage2,
-        text: '"The car was in great condition and made our trip even better. Highly recommend for this car rental website!"',
+        text: '"Автомобиль был в отличном состоянии и сделал нашу поездку еще лучше. Очень рекомендую этот сайт по аренде автомобилей!"',
     },
 ];

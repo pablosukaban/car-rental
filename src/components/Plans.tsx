@@ -8,10 +8,10 @@ const Plans = () => {
             <div className="px-6">
                 <div className="mb-12 ">
                     <h2 className="text-3xl font-semibold">
-                        Plan your trip now
+                        Планируйте поездку прямо сейчас
                     </h2>
                     <h1 className="mt-8 text-4xl font-bold lg:text-5xl">
-                        Quick & easy car rental
+                        Быстрый и простой прокат автомобилей
                     </h1>
                 </div>
                 <ul className="grid grid-cols-1 items-center justify-center gap-x-4 gap-y-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">

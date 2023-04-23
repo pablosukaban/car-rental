@@ -30,16 +30,16 @@ const SingleTestimonial = ({
 const Testimonials = () => {
     return (
         <section className="container z-30 mx-auto my-40 max-w-7xl space-y-20 px-6 text-center">
-            <div className="space-y-6">
-                <h2 className="text-2xl font-semibold">Reviewed by People</h2>
+            <div className="space-y-4">
+                <h2 className="text-2xl font-semibold">Проверено людьми</h2>
                 <h1 className="text-3xl font-bold md:text-4xl">
-                    Client&apos;s Testimonials
+                    Отзывы клиентов
                 </h1>
                 <p className="mx-auto max-w-xl text-gray-500">
-                    Discover the positive impact we&apos;ve made on the our
-                    clients by reading through their testimonials. Our clients
-                    have experienced our service and results, and they&apos;re
-                    eager to share their positive experiences with you.
+                    Узнайте о положительном влиянии, которое мы оказали на наших
+                    клиентов, прочитав их отзывы. Наши клиенты испытали на себе
+                    наши услуги и результаты, и они хотят поделиться с вами
+                    своим положительным опытом.
                 </p>
             </div>
             <div className="flex w-full flex-col items-center justify-center gap-4 md:flex-row md:items-stretch md:justify-between">

@@ -42,7 +42,7 @@ const BookCar = () => {
                             htmlFor="type-car"
                         >
                             <TagIcon className="h-4 w-4 text-primary" />
-                            Select Your Car Type{' '}
+                            Тип автомобиля{' '}
                             <span className="text-primary">*</span>
                         </label>
                         <select
@@ -65,7 +65,8 @@ const BookCar = () => {
                             htmlFor="pick-up"
                         >
                             <MapPinIcon className="h-4 w-4 text-primary" />
-                            Pick-up <span className="text-primary">*</span>
+                            Место получения{' '}
+                            <span className="text-primary">*</span>
                         </label>
                         <select
                             required={true}
@@ -85,7 +86,7 @@ const BookCar = () => {
                             htmlFor="drop-of"
                         >
                             <MapPinIcon className="h-4 w-4 text-primary" />
-                            Drop-of <span className="text-primary">*</span>
+                            Место сдачи <span className="text-primary">*</span>
                         </label>
                         <select
                             required={true}
@@ -105,15 +106,14 @@ const BookCar = () => {
                             htmlFor="pick-up-date"
                         >
                             <CalendarDaysIcon className="h-4 w-4 text-primary" />
-                            Pick-up <span className="text-primary">*</span>
+                            Дата получения{' '}
+                            <span className="text-primary">*</span>
                         </label>
                         <input
                             type="date"
                             id="pick-up-date"
                             className="border border-gray-300 px-4 py-2 text-gray-600"
                             {...register('pickDate', { required: true })}
-                            // value={pickUpDate}
-                            // onChange={handleChangePickup}
                         />
                     </div>
 
@@ -123,15 +123,13 @@ const BookCar = () => {
                             htmlFor="drop-of-date"
                         >
                             <CalendarDaysIcon className="h-4 w-4 text-primary" />
-                            Drop-of <span className="text-primary">*</span>
+                            Дата сдачи <span className="text-primary">*</span>
                         </label>
                         <input
                             type="date"
                             id="drop-of-date"
                             className="border border-gray-300 px-4 py-2 text-gray-600"
                             {...register('dropDate', { required: true })}
-                            // value={dropOffDate}
-                            // onChange={handleChangeDropoff}
                         />
                     </div>
                     <button className="w-full self-end rounded bg-primary px-6 py-2 font-bold text-white">

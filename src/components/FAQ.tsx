@@ -57,11 +57,6 @@ const FAQ = () => {
     const [currentFaq, setCurrentFaq] = useState<FaqType | null>(null);
 
     const handleClick = (item: FaqType) => {
-        // if (currentFaq) {
-        //     setCurrentFaq(null);
-        // } else {
-        //     setCurrentFaq(item);
-        // }
         if (item == currentFaq) {
             setCurrentFaq(null);
         } else {
@@ -76,12 +71,12 @@ const FAQ = () => {
                     <div className="mx-auto max-w-xl space-y-4">
                         <h2 className="text-2xl font-semibold">FAQ</h2>
                         <h1 className="text-3xl font-bold md:text-4xl">
-                            Frequently Asked Questions
+                            Часто задаваемые вопросы
                         </h1>
                         <p className=" text-gray-500">
-                            Frequently Asked Questions About the Car Rental
-                            Booking Process on Our Website: Answers to Common
-                            Concerns and Inquiries.
+                            Часто задаваемые вопросы о процессе бронирования
+                            автомобилей на нашем веб-сайте: ответы на общие
+                            вопросы и вопросы.
                         </p>
                     </div>
                     <div className="rounded bg-white shadow-xl">

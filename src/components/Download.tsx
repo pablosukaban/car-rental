@@ -7,15 +7,16 @@ const Download = () => {
     return (
         <section className="relative my-40 w-full">
             <div className="mx-auto flex max-w-7xl items-center justify-center px-6 lg:justify-start">
-                <div className="flex w-full max-w-md flex-col items-center justify-center gap-12 text-center lg:justify-start lg:text-start">
-                    <h1 className="w-full text-4xl font-semibold md:text-5xl">
-                        Download our app to get most out of it
+                <div className="relative z-50 flex w-full max-w-md flex-col items-center justify-center gap-12 text-center lg:justify-start lg:text-start">
+                    <h1 className="w-full text-3xl font-semibold md:text-4xl">
+                        Загрузите приложение, чтобы получить максимальную отдачу
                     </h1>
                     <p className="text-gray-500">
-                        Thrown shy denote ten ladies though ask saw. Or by to he
-                        going think order event music. Incommode so intention
-                        defective at convinced. Led income months itself and
-                        houses you.
+                        Раскройте весь потенциал наших услуг, загрузив наше
+                        приложение уже сегодня! Благодаря удобному интерфейсу и
+                        эксклюзивным функциям вы получите доступ ко всему, что
+                        необходимо, чтобы оставаться на связи и быть в курсе
+                        последних событий.
                     </p>
                     <div className="flex w-full flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
                         <a
