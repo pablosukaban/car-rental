@@ -8,8 +8,8 @@ const SingleTestimonial = ({
     testimonial: TestimonialType;
 }) => {
     return (
-        <div className="flex w-full max-w-lg flex-col gap-4 px-8 py-12 text-center shadow-xl sm:text-start">
-            <p className="text-xl font-medium">{testimonial.text}</p>
+        <div className="flex w-full max-w-lg flex-1 flex-col justify-between gap-4 px-8 py-12 text-center shadow-xl sm:text-start">
+            <p className="text-2xl font-medium">{testimonial.text}</p>
             <div className="grid grid-cols-2 items-center gap-2 sm:grid-cols-4">
                 <img
                     src={testimonial.image}
@@ -29,8 +29,8 @@ const SingleTestimonial = ({
 
 const Testimonials = () => {
     return (
-        <section className="container z-30 mx-auto my-24 max-w-7xl px-6 text-center">
-            <div className="space-y-2 ">
+        <section className="container z-30 mx-auto my-40 max-w-7xl space-y-20 px-6 text-center">
+            <div className="space-y-6">
                 <h2 className="text-2xl font-semibold">Reviewed by People</h2>
                 <h1 className="text-3xl font-bold md:text-4xl">
                     Client&apos;s Testimonials
@@ -42,7 +42,7 @@ const Testimonials = () => {
                     eager to share their positive experiences with you.
                 </p>
             </div>
-            <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
+            <div className="flex w-full flex-col items-center justify-center gap-4 md:flex-row md:items-stretch md:justify-between">
                 {testimonials.map((item, index) => (
                     <SingleTestimonial key={index} testimonial={item} />
                 ))}

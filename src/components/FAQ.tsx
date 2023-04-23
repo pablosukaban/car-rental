@@ -70,9 +70,9 @@ const FAQ = () => {
     };
 
     return (
-        <section className="relative z-30 mt-24 w-full text-center">
+        <section className="relative z-30 my-40 w-full text-center">
             <div className="mx-auto max-w-4xl">
-                <div className="relative z-50 flex flex-col justify-center gap-8 px-6 ">
+                <div className="relative z-50 flex flex-col justify-center gap-12 px-6 ">
                     <div className="mx-auto max-w-xl space-y-4">
                         <h2 className="text-2xl font-semibold">FAQ</h2>
                         <h1 className="text-3xl font-bold md:text-4xl">
