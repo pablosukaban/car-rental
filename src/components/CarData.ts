@@ -16,6 +16,51 @@ import BenefitImage3 from '../images/chooseUs/icon3.png';
 import TestimonialsImage1 from '../images/testimonials/pfp1.jpg';
 import TestimonialsImage2 from '../images/testimonials/pfp2.jpg';
 
+export const places = [
+    'Москва',
+    'Екатеринбург',
+    'Казань',
+    'Челябинск',
+    'Санкт-Петербург',
+    'Пермь',
+];
+
+type modalInputsType = {
+    title: string;
+    placeholder: string;
+};
+
+export const modalInputs: modalInputsType[] = [
+    {
+        title: 'Имя',
+        placeholder: 'Введите Ваше имя',
+    },
+    {
+        title: 'Фамилия',
+        placeholder: 'Введите Вашу фамилию',
+    },
+    {
+        title: 'Номер телефона',
+        placeholder: 'Введите Ваш номер телефона',
+    },
+    {
+        title: 'Возраст',
+        placeholder: 'Введите Ваш возраст',
+    },
+    {
+        title: 'Почта',
+        placeholder: 'Введите Вашу почту',
+    },
+    {
+        title: 'Адрес',
+        placeholder: 'Введите Ваш адерс',
+    },
+    {
+        title: 'Индекс',
+        placeholder: 'Введите Ваш индекс',
+    },
+];
+
 export type CarDataType = {
     name: string;
     price: string;

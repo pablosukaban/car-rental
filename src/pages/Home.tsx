@@ -45,7 +45,10 @@ const Home = () => {
     }, []);
 
     return (
-        <div ref={homeRef}>
+        <div
+            ref={homeRef}
+            className="scrollbar scrollbar-track-gray-100 scrollbar-thumb-primary"
+        >
             <Hero ref={heroRef} bookRideClick={scrollToBookCar} />
             <BookCar ref={bookCarRef} />
             <Plans />
