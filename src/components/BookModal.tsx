@@ -1,4 +1,9 @@
 import { InformationCircleIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import {
+    TagIcon,
+    MapPinIcon,
+    CalendarDaysIcon,
+} from '@heroicons/react/24/solid';
 import React, { useRef } from 'react';
 import { CAR_DATA, modalInputs } from './CarData';
 import { Inputs } from './BookCar';
@@ -37,15 +42,15 @@ const BookModal = ({ closeModal, userData, submitModal }: BookModalProps) => {
                 className="relative z-[1000] max-w-[830px] bg-white"
             >
                 <div className="flex  items-center justify-between bg-primary  p-4">
-                    <h1 className="text-bold text-2xl uppercase text-white">
+                    <h1 className="text-2xl font-bold uppercase text-white">
                         Завершите Бронирование
                     </h1>
                     <button onClick={closeModal}>
                         <XMarkIcon className="h-6 w-6 text-white/80 transition hover:text-white" />
                     </button>
                 </div>
-                <div className="bg-primary/20 p-6">
-                    <h2 className="flex gap-2 text-xl text-primary">
+                <div className="space-y-4 bg-primary/20 p-6">
+                    <h2 className="flex gap-2 text-xl font-bold text-primary">
                         <InformationCircleIcon className="h-7 w-7 " /> Заполнив
                         этот запрос на бронирование, вы получите:
                     </h2>
@@ -56,11 +61,16 @@ const BookModal = ({ closeModal, userData, submitModal }: BookModalProps) => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 items-center justify-center gap-4 p-4 text-center sm:grid-cols-2 sm:justify-start sm:text-left">
+                <div className="grid grid-cols-1 items-center justify-center gap-4 p-6 text-center sm:grid-cols-2 sm:justify-start sm:text-left">
                     <div className=" flex h-full flex-col gap-6 ">
-                        <h3 className="text-xl text-primary">Место и дата</h3>
+                        <h3 className="text-xl font-bold text-primary">
+                            Дата и Место
+                        </h3>
                         <div>
-                            <h4>Дата и время получения</h4>
+                            <h4 className="flex justify-center gap-1 font-bold sm:justify-start">
+                                <CalendarDaysIcon className="hidden h-6 w-6 text-gray-500 sm:block" />{' '}
+                                Дата и время получения
+                            </h4>
                             <div className=" flex items-center justify-center gap-1 sm:justify-start">
                                 <p className="text-gray-500">{pickDate} / </p>{' '}
                                 <input
@@ -70,7 +80,10 @@ const BookModal = ({ closeModal, userData, submitModal }: BookModalProps) => {
                             </div>
                         </div>
                         <div>
-                            <h4>Дата и время сдачи</h4>
+                            <h4 className="flex justify-center gap-1 font-bold sm:justify-start">
+                                <CalendarDaysIcon className="hidden h-6 w-6 text-gray-500 sm:block" />{' '}
+                                Дата и время сдачи
+                            </h4>
                             <div className=" flex items-center justify-center gap-1 sm:justify-start">
                                 <p className="text-gray-500">{dropDate} / </p>{' '}
                                 <input
@@ -80,16 +93,22 @@ const BookModal = ({ closeModal, userData, submitModal }: BookModalProps) => {
                             </div>
                         </div>
                         <div>
-                            <h4>Место получения</h4>
+                            <h4 className="flex justify-center gap-1 font-bold sm:justify-start">
+                                <MapPinIcon className="hidden h-6 w-6 text-gray-500 sm:block" />{' '}
+                                Место получения
+                            </h4>
                             <p className="text-gray-500">{pickCity}</p>
                         </div>
                         <div>
-                            <h4>Место сдачи</h4>
+                            <h4 className="flex justify-center gap-1 font-bold sm:justify-start">
+                                <MapPinIcon className="hidden h-6 w-6 text-gray-500 sm:block" />{' '}
+                                Место сдачи
+                            </h4>
                             <p className="text-gray-500">{dropCity}</p>
                         </div>
                     </div>
                     <div className=" flex h-full flex-col gap-6">
-                        <h3>
+                        <h3 className="text-xl font-bold">
                             Автомобиль -{' '}
                             <span className="text-primary">{name}</span>
                         </h3>
@@ -99,8 +118,10 @@ const BookModal = ({ closeModal, userData, submitModal }: BookModalProps) => {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-400 p-4">
-                    <h2 className="text-xl text-primary">Личные сведения</h2>
+                <div className="border-t border-gray-400 p-6">
+                    <h2 className="text-xl font-bold text-primary">
+                        Личные сведения
+                    </h2>
                     <form className="flex flex-col gap-6">
                         {modalInputs.map((input) => (
                             <div

@@ -11,7 +11,7 @@ const Hero = forwardRef<HTMLSelectElement, HeroProps>((props, ref) => {
     return (
         <section ref={ref} className="container mx-auto h-screen max-w-7xl">
             <div className="relative flex h-full">
-                <div className="z-20 flex h-full max-w-none flex-col items-center justify-center gap-4 px-8 text-center sm:gap-6 md:max-w-lg md:items-start md:text-left">
+                <div className="z-20 flex max-w-none flex-col items-center justify-center gap-4 px-8 text-center sm:gap-6 md:max-w-lg md:items-start md:text-left">
                     <h2 className="text-2xl font-bold">
                         Совершите поездку прямо сейчас
                     </h2>
@@ -19,7 +19,7 @@ const Hero = forwardRef<HTMLSelectElement, HeroProps>((props, ref) => {
                         <span className=" text-primary">Экономьте</span> с нашей
                         арендой автомобилей
                     </h1>
-                    <p className=" text-gray-500">
+                    <p className="text-gray-500 ">
                         Арендуйте автомобиль своей мечты. Непревзойденные цены,
                         неограниченное количество миль, гибкие возможности
                         получения и многое другое.

@@ -58,8 +58,8 @@ const BookCar = forwardRef<HTMLSelectElement, BookCarProps>((props, ref) => {
             <div className=" z-20 mx-4 border border-gray-300/40 bg-white  px-4 py-6 shadow-xl">
                 <h2 className="mb-4 text-3xl font-bold">Заказать автомобиль</h2>
                 {isModalSubmitted && (
-                    <div className="flex items-center justify-between gap-4 rounded-md bg-green-300 p-4 text-green-700">
-                        <h2>Check your email to confirm an order.</h2>
+                    <div className="mb-4 flex items-center justify-between gap-4 rounded-md bg-green-200 p-4 text-green-700">
+                        <h2>Проверьте вашу почту для подтверждения.</h2>
                         <button onClick={closeCheckEmailWindow}>
                             <XMarkIcon className="h-6 w-6 text-green-700" />
                         </button>

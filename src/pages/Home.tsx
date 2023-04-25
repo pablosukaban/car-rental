@@ -54,7 +54,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div ref={homeRef} className="relative">
+        <div ref={homeRef} className="">
             <Hero ref={heroRef} bookRideClick={scrollToBookCar} />
             <BookCar
                 ref={bookCarRef}
