@@ -3,7 +3,7 @@ import { ChevronUpIcon } from '@heroicons/react/24/solid';
 import Hero from '../components/Hero';
 import BookCar from '../components/BookCar';
 import Plans from '../components/Plans';
-import Models from '../components/Models';
+import HomeModels from '../components/HomeModels';
 import SupportInfo from '../components/SupportInfo';
 import ChooseUs from '../components/ChooseUs';
 import Testimonials from '../components/Testimonials';
@@ -63,7 +63,7 @@ const Home = () => {
                 closeModal={closeBookModal}
             />
             <Plans />
-            <Models reserveNowClick={scrollToBookCar} />
+            <HomeModels reserveNowClick={scrollToBookCar} />
             <SupportInfo />
             <ChooseUs findDetailsClick={scrollToHero} />
             <Testimonials />

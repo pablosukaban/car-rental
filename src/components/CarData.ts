@@ -5,6 +5,13 @@ import Bmw320 from '../images/cars-big/bmw320.jpg';
 import Benz from '../images/cars-big/benz.jpg';
 import Passat from '../images/cars-big/passatcc.jpg';
 
+import Golf6Box from '../images/cars-big/golf6-box.png';
+import AudiA1Box from '../images/cars-big/audi-box.png';
+import ToyotaBox from '../images/cars-big/toyota-box.png';
+import BmwBox from '../images/cars-big/bmw-box.png';
+import BenzBox from '../images/cars-big/benz-box.png';
+import PassatBox from '../images/cars-big/passat-box.png';
+
 import PlanImage1 from '../images/plan/icon1.png';
 import PlanImage2 from '../images/plan/icon2.png';
 import PlanImage3 from '../images/plan/icon3.png';
@@ -174,7 +181,7 @@ export const CAR_DATA: CarDataType[] = [
         fuel: 'Hybrid',
     },
     {
-        name: 'BMW 320 ModernLine',
+        name: 'BMW 320',
         price: '35',
         img: Bmw320,
         model: '320',
@@ -201,6 +208,81 @@ export const CAR_DATA: CarDataType[] = [
         name: 'VW Passat CC',
         price: '25',
         img: Passat,
+        model: 'Passat CC',
+        mark: 'Volkswagen',
+        year: '2008',
+        doors: '4/5',
+        air: 'Да',
+        transmission: 'Автомат',
+        fuel: 'Бензин',
+    },
+];
+
+export const vehiclesData: CarDataType[] = [
+    {
+        name: 'VW Golf 6',
+        price: '37',
+        img: Golf6Box,
+        model: 'Golf 6',
+        mark: 'Volkswagen',
+        year: '2008',
+        doors: '4/5',
+        air: 'Да',
+        transmission: 'Механика',
+        fuel: 'Дизель',
+    },
+    {
+        name: 'Audi A1 S-Line',
+        price: '45',
+        img: AudiA1Box,
+        model: 'Audi',
+        mark: 'A1',
+        year: '2012',
+        doors: '4/5',
+        air: 'Да',
+        transmission: 'Механика',
+        fuel: 'Бензин',
+    },
+    {
+        name: 'Toyota Camry',
+        price: '30',
+        img: ToyotaBox,
+        model: 'Camry',
+        mark: 'Toyota',
+        year: '2006',
+        doors: '4/5',
+        air: 'Да',
+        transmission: 'Автомат',
+        fuel: 'Hybrid',
+    },
+    {
+        name: 'BMW 320',
+        price: '35',
+        img: BmwBox,
+        model: '320',
+        mark: 'BMW',
+        year: '2012',
+        doors: '4/5',
+        air: 'Да',
+        transmission: 'Механика',
+        fuel: 'Дизель',
+    },
+    {
+        name: 'Mercedes-Benz GLK',
+        price: '50',
+        img: BenzBox,
+        model: 'Benz GLK',
+        mark: 'Mercedes',
+        year: '2006',
+        doors: '4/5',
+        air: 'Да',
+        transmission: 'Механика',
+        fuel: 'Дизель',
+    },
+    {
+        name: 'VW Passat CC',
+        price: '25',
+        img: PassatBox,
         model: 'Passat CC',
         mark: 'Volkswagen',
         year: '2008',

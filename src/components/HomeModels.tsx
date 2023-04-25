@@ -44,7 +44,7 @@ type ModelsProps = {
     reserveNowClick: (e: React.MouseEvent) => void;
 };
 
-const Models = ({ reserveNowClick }: ModelsProps) => {
+const HomeModels = ({ reserveNowClick }: ModelsProps) => {
     const [currentCar, setCurrentCar] = useState(CAR_DATA[0]);
 
     return (
@@ -104,4 +104,4 @@ const Models = ({ reserveNowClick }: ModelsProps) => {
     );
 };
 
-export default Models;
+export default HomeModels;
