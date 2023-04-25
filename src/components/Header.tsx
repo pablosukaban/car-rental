@@ -22,10 +22,12 @@ const Header = () => {
 
     const openMenu = () => {
         setIsMenuClicked(true);
+        document.body.style.overflow = 'hidden';
     };
 
     const closeMenu = () => {
         setIsMenuClicked(false);
+        document.body.style.overflow = 'auto';
     };
 
     return (
@@ -71,7 +73,7 @@ const Header = () => {
                 </div>
             </div>
             <div
-                className={`fixed inset-0 z-[500] h-screen w-screen bg-white transition duration-300 ${
+                className={`fixed inset-0 z-[500] w-screen bg-white transition duration-300 ${
                     isMenuClicked ? 'translate-x-0' : '-translate-x-full'
                 }`}
             >

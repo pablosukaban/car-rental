@@ -12,10 +12,19 @@ import Download from '../components/Download';
 
 const Home = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isBookModalOpen, setIsBookModalOpen] = useState(false);
 
     const homeRef = useRef<HTMLDivElement>(null);
     const bookCarRef = useRef<HTMLSelectElement>(null);
     const heroRef = useRef<HTMLSelectElement>(null);
+
+    const openBookModal = () => {
+        setIsBookModalOpen(true);
+    };
+
+    const closeBookModal = () => {
+        setIsBookModalOpen(false);
+    };
 
     const scrollToBookCar = (e: React.MouseEvent) => {
         e.preventDefault();
@@ -45,12 +54,14 @@ const Home = () => {
     }, []);
 
     return (
-        <div
-            ref={homeRef}
-            className="scrollbar scrollbar-track-gray-100 scrollbar-thumb-primary"
-        >
+        <div ref={homeRef} className="relative">
             <Hero ref={heroRef} bookRideClick={scrollToBookCar} />
-            <BookCar ref={bookCarRef} />
+            <BookCar
+                ref={bookCarRef}
+                isBookModalOpen={isBookModalOpen}
+                openModal={openBookModal}
+                closeModal={closeBookModal}
+            />
             <Plans />
             <Models reserveNowClick={scrollToBookCar} />
             <SupportInfo />
@@ -58,13 +69,15 @@ const Home = () => {
             <Testimonials />
             <FAQ />
             <Download />
-            {isScrolled && (
+            {isScrolled && !isBookModalOpen ? (
                 <button
                     onClick={scrollToHero}
-                    className="fixed bottom-5 right-5 rounded-full bg-primary p-4 text-white"
+                    className="fixed bottom-5 right-5 z-50 rounded-full bg-primary p-4 text-white"
                 >
                     <ChevronUpIcon className="h-4 w-4 md:h-6 md:w-6" />
                 </button>
+            ) : (
+                ''
             )}
         </div>
     );
