@@ -7,7 +7,7 @@ const Plans = () => {
         <section className="container z-30 mx-auto mt-24 max-w-7xl text-center">
             <div className="px-6">
                 <div className="mb-12 ">
-                    <h2 className="text-3xl font-semibold">
+                    <h2 className="text-3xl font-medium">
                         Планируйте поездку прямо сейчас
                     </h2>
                     <h1 className="mt-8 text-4xl font-bold lg:text-5xl">

@@ -16,6 +16,34 @@ import BenefitImage3 from '../images/chooseUs/icon3.png';
 import TestimonialsImage1 from '../images/testimonials/pfp1.jpg';
 import TestimonialsImage2 from '../images/testimonials/pfp2.jpg';
 
+import AboutImage1 from '../images/about/icon1.png';
+import AboutImage2 from '../images/about/icon2.png';
+import AboutImage3 from '../images/about/icon3.png';
+
+type AboutInfoType = {
+    icon: string;
+    number: number;
+    title: string;
+};
+
+export const aboutInfo: AboutInfoType[] = [
+    {
+        icon: AboutImage1,
+        number: 20,
+        title: 'Типов Авто',
+    },
+    {
+        icon: AboutImage2,
+        number: 85,
+        title: 'Пунктов проката',
+    },
+    {
+        icon: AboutImage3,
+        number: 75,
+        title: 'Мастерских',
+    },
+];
+
 export const places = [
     'Москва',
     'Екатеринбург',
