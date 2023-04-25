@@ -4,7 +4,7 @@ import { SinglePlan } from './SingleItem';
 
 const Plans = () => {
     return (
-        <section className="container z-30 mx-auto mt-24 max-w-7xl text-center">
+        <section className="container z-30 mx-auto my-24 max-w-7xl text-center">
             <div className="px-6">
                 <div className="mb-12 ">
                     <h2 className="text-3xl font-medium">
