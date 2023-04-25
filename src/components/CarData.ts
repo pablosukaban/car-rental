@@ -27,6 +27,13 @@ import AboutImage1 from '../images/about/icon1.png';
 import AboutImage2 from '../images/about/icon2.png';
 import AboutImage3 from '../images/about/icon3.png';
 
+import Employee1 from '../images/team/1.png';
+import Employee2 from '../images/team/2.png';
+import Employee3 from '../images/team/3.png';
+import Employee4 from '../images/team/4.png';
+import Employee5 from '../images/team/5.png';
+import Employee6 from '../images/team/6.png';
+
 type AboutInfoType = {
     icon: string;
     number: number;
@@ -341,5 +348,44 @@ export const testimonials: TestimonialType[] = [
         city: 'Тюмень',
         image: TestimonialsImage2,
         text: '"Автомобиль был в отличном состоянии и сделал нашу поездку еще лучше. Очень рекомендую этот сайт по аренде автомобилей!"',
+    },
+];
+
+export type EmployeeType = {
+    image: string;
+    name: string;
+    job: string;
+};
+
+export const employees: EmployeeType[] = [
+    {
+        image: Employee1,
+        name: 'Люк Миллер',
+        job: 'Продавец',
+    },
+    {
+        image: Employee2,
+        name: 'Майкл Диаз',
+        job: 'Владелец бизнеса',
+    },
+    {
+        image: Employee3,
+        name: 'Бриана Росс',
+        job: 'Фотограф',
+    },
+    {
+        image: Employee4,
+        name: 'Лорен Ривера',
+        job: 'Автослесарь',
+    },
+    {
+        image: Employee5,
+        name: 'Мартин Ризз',
+        job: 'Механик',
+    },
+    {
+        image: Employee6,
+        name: 'Кейтлин Хант',
+        job: 'Менеджер',
     },
 ];
