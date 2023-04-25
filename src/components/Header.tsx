@@ -39,7 +39,7 @@ const Header = () => {
                     </div>
                 </Link>
                 <nav className="hidden lg:block">
-                    <ul className="flex items-center justify-center gap-2">
+                    <ul className="flex items-center justify-center gap-4">
                         {links.map((item, index) => (
                             <NavLink
                                 style={({ isActive }) => ({
