@@ -1,9 +1,5 @@
 import { InformationCircleIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import {
-    TagIcon,
-    MapPinIcon,
-    CalendarDaysIcon,
-} from '@heroicons/react/24/solid';
+import { MapPinIcon, CalendarDaysIcon } from '@heroicons/react/24/solid';
 import React, { useRef } from 'react';
 import { CAR_DATA, modalInputs } from './CarData';
 import { Inputs } from './BookCar';
@@ -122,7 +118,10 @@ const BookModal = ({ closeModal, userData, submitModal }: BookModalProps) => {
                     <h2 className="text-xl font-bold text-primary">
                         Личные сведения
                     </h2>
-                    <form className="flex flex-col gap-6">
+                    <form
+                        className="flex flex-col gap-6"
+                        onSubmit={submitModal}
+                    >
                         {modalInputs.map((input) => (
                             <div
                                 className="flex flex-col gap-2 sm:text-lg"
@@ -136,6 +135,7 @@ const BookModal = ({ closeModal, userData, submitModal }: BookModalProps) => {
                                     type="text"
                                     className=" bg-gray-200 p-2 text-gray-500 focus:outline-none sm:p-4 "
                                     placeholder={input.placeholder}
+                                    defaultValue={input.example}
                                     required
                                 />
                                 <div className="text-xs">
@@ -153,11 +153,7 @@ const BookModal = ({ closeModal, userData, submitModal }: BookModalProps) => {
                                 обновления
                             </label>
                         </div>
-                        <button
-                            type="button"
-                            onClick={submitModal}
-                            className="self-center rounded-md bg-primary px-4 py-2 text-white sm:self-end"
-                        >
+                        <button className="self-center rounded-md bg-primary px-4 py-2 text-white sm:self-end">
                             Завершить бронирование
                         </button>
                     </form>

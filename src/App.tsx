@@ -1,25 +1,69 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import AboutPage from './pages/AboutPage';
-import ModelsPage from './pages/VehicleModelsPage';
-import TestimonialsPage from './pages/TestimonialsPage';
-import OurTeamPage from './pages/OurTeamPage';
-import ContactPage from './pages/ContactPage';
+import Loader from './components/Loader';
+
+const Header = lazy(() => import('./components/Header'));
+const Footer = lazy(() => import('./components/Footer'));
+const Home = lazy(() => import('./pages/Home'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const ModelsPage = lazy(() => import('./pages/VehicleModelsPage'));
+const TestimonialsPage = lazy(() => import('./pages/TestimonialsPage'));
+const OurTeamPage = lazy(() => import('./pages/OurTeamPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
 
 const App = () => {
     return (
         <div>
             <Header />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<AboutPage />} />
-                <Route path="/models" element={<ModelsPage />} />
-                <Route path="/testimonials" element={<TestimonialsPage />} />
-                <Route path="/team" element={<OurTeamPage />} />
-                <Route path="/contact" element={<ContactPage />} />
+                <Route
+                    path="/"
+                    element={
+                        <Suspense fallback={<Loader />}>
+                            <Home />
+                        </Suspense>
+                    }
+                />
+                <Route
+                    path="/about"
+                    element={
+                        <Suspense fallback={<Loader />}>
+                            <AboutPage />{' '}
+                        </Suspense>
+                    }
+                />
+                <Route
+                    path="/models"
+                    element={
+                        <Suspense fallback={<Loader />}>
+                            <ModelsPage />{' '}
+                        </Suspense>
+                    }
+                />
+                <Route
+                    path="/testimonials"
+                    element={
+                        <Suspense fallback={<Loader />}>
+                            <TestimonialsPage />{' '}
+                        </Suspense>
+                    }
+                />
+                <Route
+                    path="/team"
+                    element={
+                        <Suspense fallback={<Loader />}>
+                            <OurTeamPage />{' '}
+                        </Suspense>
+                    }
+                />
+                <Route
+                    path="/contact"
+                    element={
+                        <Suspense fallback={<Loader />}>
+                            <ContactPage />{' '}
+                        </Suspense>
+                    }
+                />
             </Routes>
             <Footer />
         </div>

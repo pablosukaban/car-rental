@@ -70,36 +70,44 @@ export const places = [
 type modalInputsType = {
     title: string;
     placeholder: string;
+    example: string;
 };
 
 export const modalInputs: modalInputsType[] = [
     {
         title: 'Имя',
         placeholder: 'Введите Ваше имя',
+        example: 'Александр',
     },
     {
         title: 'Фамилия',
         placeholder: 'Введите Вашу фамилию',
+        example: 'Иванов',
     },
     {
         title: 'Номер телефона',
         placeholder: 'Введите Ваш номер телефона',
+        example: '+79121334455',
     },
     {
         title: 'Возраст',
         placeholder: 'Введите Ваш возраст',
+        example: '29',
     },
     {
         title: 'Почта',
         placeholder: 'Введите Вашу почту',
+        example: 'example@gmail.com',
     },
     {
         title: 'Адрес',
         placeholder: 'Введите Ваш адерс',
+        example: 'Москва, ул. Ленина, д. 1',
     },
     {
         title: 'Индекс',
         placeholder: 'Введите Ваш индекс',
+        example: '123456',
     },
 ];
 
