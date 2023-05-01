@@ -2,6 +2,7 @@ import React, { forwardRef } from 'react';
 import { CheckCircleIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
 import HeroCar from '../images/hero/main-car.png';
 import HeroBg from '../images/hero/hero-bg.png';
+import { Link } from 'react-router-dom';
 
 type HeroProps = {
     bookRideClick: (e: React.MouseEvent) => void;
@@ -27,16 +28,19 @@ const Hero = forwardRef<HTMLSelectElement, HeroProps>((props, ref) => {
                     <div className="flex w-full flex-col items-center justify-center gap-4 sm:flex-row">
                         <a
                             href=""
-                            className="flex w-full max-w-xs items-center justify-center gap-2 rounded bg-primary py-4 font-bold text-white"
+                            className="flex w-full max-w-xs items-center justify-center gap-2 rounded border-2 border-primary bg-primary py-4 font-bold text-white transition hover:bg-white hover:text-primary"
                             onClick={props.bookRideClick}
                         >
                             <span>Заказать поездку</span>{' '}
                             <CheckCircleIcon className="h-4 w-4 " />
                         </a>
-                        <button className="flex w-full max-w-xs items-center justify-center gap-2 rounded bg-black py-4 font-bold text-white">
+                        <Link
+                            to="/about"
+                            className="flex w-full max-w-xs items-center justify-center gap-2 rounded  border-2 border-black bg-black py-4 font-bold text-white transition hover:bg-white hover:text-black"
+                        >
                             <span>Подробнее</span>{' '}
                             <ChevronRightIcon className="h-4 w-4" />
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 <div>
